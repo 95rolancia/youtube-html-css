@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8bdc7d2339.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+    <title>Youtube</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__start">
+        <button class="header__toggleBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <button class="header__logo">
+          <i class="fab fa-youtube"></i>
+          <span class="header__logo__title">Youtube</span>
+        </button>
+      </div>
+      <div class="search">
+        <input class="search__bar" type="text" placeholder="검색">
+      <button class="search__bar__btn"><i class="fas fa-search"></i></button>
+      </div>
+      
+
+      <ul class="header__btns">
+        <button class="make__video__btn">
+          <i class="fas fa-video"></i>
+        </button>
+        <button class="app_btn">
+          <i class="fab fa-buromobelexperte"></i>
+        </button>
+        <button class="notification__btn">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="avatar__btn">
+            <img src="./image/avatar.png" alt="" srcset="">
+        </button>
+      </ul>
+    </header>
+
+    <!-- Video -->
+    <section class="video">
+      <video controls>
+        <source src="video.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </section>
+
+    <!-- Info -->
+    <section id="info">
+      <div class="info__primary">
+
+        <div class="info__title__hash">#TWICE #YESorYES</div>
+          <span class="info__title">TWICE(트와이스) "YES or YES" M/V</span>
+        <div class="info__title__views__and__button">
+          <span class="info__title__views">조회수 275,747,596회 • 2018. 11. 5.</span>  
+
+          <div class="info__action">
+
+            <button class="info__action__upBtn">
+              <i class="fas fa-thumbs-up"></i>
+              <span>300만</span>
+            </button>
+            <button class="info__action__downBtn">
+              <i class="fas fa-thumbs-down"></i>
+              <span>19만</span>
+            </button>
+            <button class="info__action__shareBtn">
+              <i class="fas fa-share"></i>
+              <span>공유</span>
+            </button>
+            <button class="info__action__saveBtn">
+              <i class="fas fa-plus"></i>
+              <span>저장</span>
+            </button>
+            <button class="info__action__reportBtn">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+
+          </div>  
+       </div>
+      </div>
+
+
+      <div class="infofo">
+
+      <div class="info__host">
+        <div class="info__host__main">
+          <img src="image/JYP Entertainment.jpg" alt="" />
+          <div class="info__host__main__metadata">
+            <div class="info__host__main__name">JYP Entertainment</div>
+            <div class="info__host__main__sub">구독자 1900만명</div>
+          </div>
+          
+        </div>
+        <button class="info__host__subBtn">구독</button>
+        
+
+      </div>
+      
+      <article class="info__article">
+        TWICE(트와이스) "YES or YES" M/V 
+
+        iTunes & Apple Music  https://goo.gl/fc5tPP
+        Spotify https://goo.gl/p4dWyd
+
+        TWICE Official YouTube: http://www.youtube.com/c/TWICEonAir
+        TWICE Official Facebook: http://www.facebook.com/JYPETWICE
+        TWICE Official Twitter: http://www.twitter.com/JYPETWICE
+        TWICE Official Instagram: http://www.instagram.com/TWICETAGRAM
+        TWICE Official Homepage: http://TWICE.jype.com
+        TWICE Official Fan's: http://fans.jype.com/TWICE
+
+        #TWICE #YESorYES
+
+        ⓒ 2018 JYP Entertainment. All Rights Reserved
+      </article> 
+    </div>
+
+    </section>
+
+    <!-- Next -->
+    <section class="next">
+      <span>Up next</span>
+      <item class="item item1">
+        <img src="image/twice1.jpg" alt="" />
+        <div class="item__info">
+          <div class="title">우아하게 우아하게 우아하게</div>
+          <div class="host">TWICE</div>
+          <div class="view">4M views</div>
+        </div>
+      </item>
+      <item class="item item2">
+        <img src="image/twice2.jpg" alt="" />
+        <div class="item__info">
+          <div class="title">우아하게 우아하게 우아하게</div>
+          <div class="host">TWICE</div>
+          <div class="view">4M views</div>
+        </div>
+      </item>
+      <item class="item item3">
+        <img src="image/twice3.jpg" alt="" />
+        <div class="item__info">
+          <div class="title">우아하게 우아하게 우아하게</div>
+          <div class="host">TWICE</div>
+          <div class="view">4M views</div>
+        </div>
+      </item>
+    </section>
+  </body>
+</html>
