@@ -131,13 +131,11 @@ button:focus {
   max-width: 1300px;
 }
 
+/* infoAndCommentsAndNext */
+
 #infoAndCommentsAndNext {
   margin: 20px 20px;
 }
-
-/* #infoAndComments {
-  margin: 20px 20px;
-} */
 
 .info__primary {
   display: flex;
@@ -188,7 +186,7 @@ button:focus {
 }
 
 #infoAndComments {
-  width: 60%;
+  width: 65%;
 }
 
 .info__secondary {
