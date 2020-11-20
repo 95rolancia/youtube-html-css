@@ -18,35 +18,48 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header id="header">
       <div class="header__start">
-        <button class="header__toggleBtn">
-          <i class="fas fa-bars"></i>
-        </button>
-        
-        <button class="header__logo">
-          <i class="fab fa-youtube"></i>
-          <span class="header__logo__title">Youtube</span>
-        </button>
+        <div class="start">
+          <button class="start__toggleBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="header__logo">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <i class="fab fa-youtube logo__icon"></i>
+              <span class="logo__title">Youtube</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="search">
-        <input class="search__bar" type="text" placeholder="검색">
-      <button class="search__bar__btn"><i class="fas fa-search"></i></button>
+
+      <div class="header__search">
+        <div class="search">
+          <form class="search-form">
+            <input class="search-form__input" type="text" placeholder="검색" />
+            <button class="search-form__button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      
 
       <ul class="header__btns">
-        <button class="make__video__btn">
+        <button class="header__make__video__btn">
           <i class="fas fa-video"></i>
         </button>
-        <button class="app_btn">
+
+        <button class="header__app__btn">
           <i class="fab fa-buromobelexperte"></i>
         </button>
-        <button class="notification__btn">
+        <button class="header__notification__btn">
           <i class="fas fa-bell"></i>
         </button>
-        <button class="avatar__btn">
-            <img src="./image/avatar.png" alt="" srcset="">
+        <button class="header__avatar__btn">
+          <img src="./images/avatar.png" alt="" srcset="" />
         </button>
       </ul>
     </header>
@@ -59,106 +72,155 @@
       </video>
     </section>
 
-    <!-- Info -->
-    <section id="info">
-      <div class="info__primary">
-
-        <div class="info__title__hash">#TWICE #YESorYES</div>
-          <span class="info__title">TWICE(트와이스) "YES or YES" M/V</span>
-        <div class="info__title__views__and__button">
-          <span class="info__title__views">조회수 275,747,596회 • 2018. 11. 5.</span>  
-
-          <div class="info__action">
-
-            <button class="info__action__upBtn">
-              <i class="fas fa-thumbs-up"></i>
-              <span>300만</span>
-            </button>
-            <button class="info__action__downBtn">
-              <i class="fas fa-thumbs-down"></i>
-              <span>19만</span>
-            </button>
-            <button class="info__action__shareBtn">
-              <i class="fas fa-share"></i>
-              <span>공유</span>
-            </button>
-            <button class="info__action__saveBtn">
-              <i class="fas fa-plus"></i>
-              <span>저장</span>
-            </button>
-            <button class="info__action__reportBtn">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-
-          </div>  
-       </div>
-      </div>
-
-
-      <div class="infofo">
-
-      <div class="info__host">
-        <div class="info__host__main">
-          <img src="image/JYP Entertainment.jpg" alt="" />
-          <div class="info__host__main__metadata">
-            <div class="info__host__main__name">JYP Entertainment</div>
-            <div class="info__host__main__sub">구독자 1900만명</div>
+    <!-- infoAndCommentsAndNext -->
+    <div id="infoAndCommentsAndNext">
+      <section id="infoAndComments">
+        <div class="info__primary">
+          <span class="info__primary__hash">#TWICE #YESorYES</span>
+          <span class="info__primary__title"
+            >TWICE(트와이스) "YES or YES" M/V</span
+          >
+          <div class="views__and__buttons">
+            <span class="views">조회수 275,747,596회 • 2018. 11. 5.</span>
+            <div class="action">
+              <div class="action__up">
+                <button class="action__up__button">
+                  <i class="fas fa-thumbs-up"></i>
+                </button>
+                <span>300만</span>
+              </div>
+              <div class="action__down">
+                <button class="action__down__button">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+                <span>19만</span>
+              </div>
+              <div class="action__share">
+                <button class="action__share__button">
+                  <i class="fas fa-share"></i>
+                </button>
+                <span>공유</span>
+              </div>
+              <div class="action__save">
+                <button class="action__save__button">
+                  <i class="fas fa-plus"></i>
+                </button>
+                <span>저장</span>
+              </div>
+              <div class="action__report">
+                <button class="action__report__button">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
           </div>
-          
         </div>
-        <button class="info__host__subBtn">구독</button>
-        
 
+        <div class="info__secondary">
+          <div class="info__secondary__bar">
+            <div class="start">
+              <img src="images/JYP Entertainment.jpg" alt="" />
+              <div class="start__metadata">
+                <div class="start__metadata__name">JYP Entertainment</div>
+                <div class="start__metadata__sub">구독자 1900만명</div>
+              </div>
+            </div>
+            <div class="end">
+              <button class="end__subButton">구독</button>
+            </div>
+          </div>
+
+          <article class="info__secondary__article clamp">
+            TWICE(트와이스) "YES or YES" M/V<br /><br />
+
+            iTunes & Apple Music <br />
+            Spotify https://goo.gl/p4dWyd<br /><br />
+
+            TWICE Official YouTube: http://www.youtube.com/c/TWICEonAir<br />
+            TWICE Official Facebook: http://www.facebook.com/JYPETWICE<br />
+            TWICE Official Twitter: http://www.twitter.com/JYPETWICE<br />
+            TWICE Official Instagram: http://www.instagram.com/TWICETAGRAM<br />
+            TWICE Official Homepage: http://TWICE.jype.com<br />
+            TWICE Official Fan's: http://fans.jype.com/TWICE<br /><br /><br />
+
+            #TWICE #YESorYES<br /><br />
+
+            ⓒ 2018 JYP Entertainment. All Rights Reserved<br />
+          </article>
+          <button class="moreButton">더보기</button>
+        </div>
+
+              <!-- comments -->
+      <div class="comments">
+        <div class="comments__header">
+          <span class="comments__count">댓글 468, 698개</span>
+          <div class="comments__sort">
+            <i class="fas fa-sort-amount-down"></i>
+            <span>정렬 기준</span>
+          </div>
+        </div>
+
+        <div class="comments__form">
+          <div class="user__icon"><img src="images/avatar.png" /></div>
+          <form class="comments__form">
+            <input
+              class="comments__form__input"
+              type="text"
+              placeholder="공개 댓글 추가.."
+            />
+            <div class="comments__form__buttons">
+              <button class="comments__form__cancelButton">취소</button>
+              <button class="comments__form__submitButton">댓글</button>
+            </div>
+          </form>
+        </div>
       </div>
-      
-      <article class="info__article">
-        TWICE(트와이스) "YES or YES" M/V 
+      </section>
 
-        iTunes & Apple Music  https://goo.gl/fc5tPP
-        Spotify https://goo.gl/p4dWyd
-
-        TWICE Official YouTube: http://www.youtube.com/c/TWICEonAir
-        TWICE Official Facebook: http://www.facebook.com/JYPETWICE
-        TWICE Official Twitter: http://www.twitter.com/JYPETWICE
-        TWICE Official Instagram: http://www.instagram.com/TWICETAGRAM
-        TWICE Official Homepage: http://TWICE.jype.com
-        TWICE Official Fan's: http://fans.jype.com/TWICE
-
-        #TWICE #YESorYES
-
-        ⓒ 2018 JYP Entertainment. All Rights Reserved
-      </article> 
+      <!-- Next -->
+      <section id="next">
+        <span>다음 동영상</span>
+        <item class="item item1">
+          <img src="images/twice1.jpg" alt="" />
+          <div class="item__info">
+            <div class="title">우아하게</div>
+            <div class="host">TWICE</div>
+            <div class="view">4M views</div>
+          </div>
+        </item>
+        <item class="item item2">
+          <img src="images/twice2.jpg" alt="" />
+          <div class="item__info">
+            <div class="title">우아하게</div>
+            <div class="host">TWICE</div>
+            <div class="view">4M views</div>
+          </div>
+        </item>
+        <item class="item item3">
+          <img src="images/twice3.jpg" alt="" />
+          <div class="item__info">
+            <div class="title">우아하게</div>
+            <div class="host">TWICE</div>
+            <div class="view">4M views</div>
+          </div>
+        </item>
+        <item class="item item3">
+          <img src="images/twice3.jpg" alt="" />
+          <div class="item__info">
+            <div class="title">우아하게</div>
+            <div class="host">TWICE</div>
+            <div class="view">4M views</div>
+          </div>
+        </item>
+        <item class="item item3">
+          <img src="images/twice3.jpg" alt="" />
+          <div class="item__info">
+            <div class="title">우아하게</div>
+            <div class="host">TWICE</div>
+            <div class="view">4M views</div>
+          </div>
+        </item>
+      </section>
     </div>
-
-    </section>
-
-    <!-- Next -->
-    <section class="next">
-      <span>Up next</span>
-      <item class="item item1">
-        <img src="image/twice1.jpg" alt="" />
-        <div class="item__info">
-          <div class="title">우아하게 우아하게 우아하게</div>
-          <div class="host">TWICE</div>
-          <div class="view">4M views</div>
-        </div>
-      </item>
-      <item class="item item2">
-        <img src="image/twice2.jpg" alt="" />
-        <div class="item__info">
-          <div class="title">우아하게 우아하게 우아하게</div>
-          <div class="host">TWICE</div>
-          <div class="view">4M views</div>
-        </div>
-      </item>
-      <item class="item item3">
-        <img src="image/twice3.jpg" alt="" />
-        <div class="item__info">
-          <div class="title">우아하게 우아하게 우아하게</div>
-          <div class="host">TWICE</div>
-          <div class="view">4M views</div>
-        </div>
-      </item>
-    </section>
   </body>
 </html>
