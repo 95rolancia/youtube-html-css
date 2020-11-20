@@ -101,7 +101,7 @@ button:focus {
   display: flex;
   justify-content: flex-end;
   min-width: 240px;
-  padding-right: 1em;
+  padding-right: 0.8em;
 }
 
 .header__btns button {
@@ -131,9 +131,13 @@ button:focus {
   max-width: 1300px;
 }
 
-#info {
+#infoAndCommentsAndNext {
   margin: 20px 20px;
 }
+
+/* #infoAndComments {
+  margin: 20px 20px;
+} */
 
 .info__primary {
   display: flex;
@@ -166,7 +170,7 @@ button:focus {
 }
 
 .action > * {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 .action button {
@@ -177,6 +181,14 @@ button:focus {
 .action i,
 .action span {
   color: #707070;
+}
+
+#infoAndCommentsAndNext {
+  display: flex;
+}
+
+#infoAndComments {
+  width: 60%;
 }
 
 .info__secondary {
@@ -219,8 +231,8 @@ button:focus {
 }
 
 .end__subButton {
-  width: 5em;
-  height: 3em;
+  width: 4.5em;
+  height: 2.5em;
   font-size: 1rem;
   color: white;
   background-color: red;
@@ -243,6 +255,79 @@ button:focus {
   display: flex;
   padding-top: 1em;
   padding-left: 5em;
+}
+
+.comments {
+  padding-top: 1.2em;
+}
+
+.comments__count {
+  padding-right: 2em;
+}
+
+.comments__header {
+  display: flex;
+}
+
+.comments__sort i {
+  color: #909090;
+}
+
+.comments__form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.user__icon {
+  display: inline;
+  padding-right: 1em;
+}
+
+.user__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.comments__form {
+  display: inline-block;
+  width: 100%;
+}
+
+.comments__form__input {
+  /* display: block; */
+  width: 100%;
+  padding: 0.5em 0em;
+  font-size: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #909090;
+  outline: none;
+}
+
+.comments__form__input:focus {
+  border-bottom: 2px solid black;
+}
+
+.comments__form__buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5em;
+}
+
+.comments__form__cancelButton {
+  width: 4.5em;
+  height: 2.5em;
+  font-size: 1rem;
+}
+
+.comments__form__submitButton {
+  width: 4.5em;
+  height: 2.5em;
+  font-size: 1rem;
+  color: white;
+  background-color: red;
 }
 
 #next {
@@ -287,5 +372,15 @@ button:focus {
 @media screen and (max-width: 720px) {
   .header__search {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #infoAndCommentsAndNext {
+    flex-direction: column;
+  }
+
+  #infoAndComments {
+    width: 95%;
   }
 }
